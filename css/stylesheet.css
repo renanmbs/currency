@@ -118,5 +118,19 @@ footer a:hover{
 @media only screen and (max-width: 600px){
     #box{
         width: 23rem;
+        height: 32rem;
+        filter: drop-shadow(1px 1px 5px darkgoldenrod);
+        border: solid 2px darkgoldenrod;
+    }
+
+    h1{
+        color:	#44ae8a;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-shadow: black 2px 1px 0px;
+        background-color: #3a5e52;
+        width: 70%;
+        border: solid #44ae8a;
+        filter: drop-shadow(1px 1px 1px darkgoldenrod);
     }
 }
