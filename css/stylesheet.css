@@ -8,11 +8,15 @@
     text-align: center;
 }
 
+html, body {
+    overflow: auto;
+}
+
 body{
     background-image: url("../img/money.jpeg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
 header{
@@ -118,7 +122,7 @@ footer a:hover{
 @media only screen and (max-width: 600px){
     #box{
         width: 23rem;
-        height: 32rem;
+        height: 49rem;
         filter: drop-shadow(1px 1px 5px darkgoldenrod);
         border: solid 2px darkgoldenrod;
     }
