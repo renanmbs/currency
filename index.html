@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Conversion</title>
+    <link href="./css/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Currency converter<br>$</h1>
+    </header>
+
+    <section id="container">
+
+        <article id="box">
+
+            <section id="top">
+
+                <form id="form">
+
+                    <h3>Choose Your Option</h3>
+    
+                    <select id="choice">
+                        <option value="def" default>Default</option>
+                        <option value="sym">Find Symbols</option>
+                        <option value="ctr">List of Countries</option>
+                        <option value="conv">Convert Money (Symbol)</option>
+                        <option value="conv_name">Convert Money (Currency Name)</option>
+                    </select>
+    
+                </form>
+
+                    <section id="areas">
+
+    
+                        <section id="conv_area">
+
+
+                            <button id="convert_button">Convert</button>
+                            <button id="clean_conv">Clean</button>
+                            <button id="swap_sym">Swap</button><br>
+                            
+                            <form>
+
+                                <label for="conv_1">Your Currency</label><br>
+                                <input type="text" id="conv_1" name="conv_1" placeholder="Your Currency"><br>
+
+                                <label for="amt_conv">$ Amount</label><br>
+                                <input type="number" id="amt_conv" name="amt_conv"><br>
+        
+                                <label for="conv_2">Currency Desired</label><br>
+                                <input type="text" id="conv_2" name="conv_2" placeholder="Desired Currency"><br>
+
+                            </form>
+    
+                        </section>
+
+                        <section id="curr_name_area">
+
+                            <button id="convert_button_name">Convert</button>
+                            <button id="clean_conv_name">Clean</button>
+                            <button id="swap_name">Swap</button><br>
+
+                            <form>
+
+                                <label for="conv_3">Your Currency</label><br>
+                                <input id="conv_3" name="hav_curr" list="hav_curr" placeholder="Your Currency">
+                                <datalist id="hav_curr"></datalist><br>
+
+                                <label for="amt_conv_name">$ Amount</label><br>
+                                <input type="number" id="amt_conv_name" name="amt_conv_name"><br>
+        
+                                <label for="conv_4">Currency Desired</label><br>
+                                <input id="conv_4" name="des_curr" list="des_curr" placeholder="Desired Currency">
+                                <datalist id="des_curr"></datalist>
+
+                            </form>
+    
+                        </section>
+    
+    
+                    </section>
+    
+    
+                <section id="sym_area">
+
+                    <button id="clean_crr">Clean</button>
+                            
+                    <form>
+                        <input id="curr_input" name="curr" list="curr" placeholder="Desired Currency">
+                        <datalist id="curr"></datalist>
+                    </form>
+    
+                </section>
+    
+                <section id="cnt_area">
+    
+                    <button id="clean_cnt">Clean</button>
+    
+                    <form>
+                        <input id="list_input" name="countries" list="countries" placeholder="Desired Country">
+                        <datalist id="countries"></datalist>
+                    </form>
+    
+                </section>
+
+            </section>
+            
+            <section id="results">
+                <h2>Results</h2>
+
+                <article id="result_country">
+                    <h3>Country</h3>
+                    <p id="ctr_chosen"></p>
+
+                    <h3>Coin Symbol</h3>
+                    <p id="symbol_chosen"></p>
+
+                    <h3>Currency Name</h3>
+                    <p id="curr_name_chosen"></p>
+
+                    <h3>Currency Symbol</h3>
+                    <p id="curr_sym_chosen"></p>
+
+                </article>
+
+                <article id="result_curr">
+
+                    <h3>Currency Name</h3>
+                    <p id="crr_chosen"></p>
+
+                    <h3>Currency Symbol</h3>
+                    <p id="symbol_curr"></p>
+
+                </article>
+
+                <article id="result_conv_name">
+
+                    <h3>Your Currency</h3>
+                    <p id="cnv_chosen_name"></p>
+
+                    <h3>Desired Currency</h3>
+                    <p id="cnv_result_name"></p>
+
+                </article>
+
+                <article id="result_conv_sym">
+
+                    <h3>Your Currency</h3>
+                    <p id="cnv_chosen_sym"></p>
+
+                    <h3>Desired Currency</h3>
+                    <p id="cnv_result_sym"></p>
+
+                </article>
+            </section>
+            
+        </article>
+
+    </section>
+
+    <footer>
+        <a href="https://www.currencyconverterapi.com/" target="_blank">API Used</a>
+    </footer>
+    
+</body>
+<script src="./js/app.js"></script>
+</html>
