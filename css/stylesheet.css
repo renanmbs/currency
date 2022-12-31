@@ -114,3 +114,9 @@ footer a:hover{
     text-decoration: underline #9f3632;
     color:#3a5e52;
 }
+
+@media only screen and (max-width: 600px){
+    #box{
+        width: 23rem;
+    }
+}
