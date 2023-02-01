@@ -86,7 +86,7 @@ async function get_currency(){
 
     document.getElementById("result_country").style.display = "none"; //Get datalist area
 
-    const list_currency = await fetch("https://free.currconv.com/api/v7/currencies?apiKey=a2deff7d2e49cf2637bb");
+    const list_currency = await fetch("https://free.currconv.com/api/v7/currencies?apiKey=255b739e9b5bb67c9f82");
     let data = await list_currency.json(); //Raw data country's info
     let currency = data.results; //Cleaned data
     let options = ''; //Variable to store the options
@@ -140,7 +140,7 @@ async function get_countries(){
     clean_ctr();
 
     //Variables
-    const list_currency = await fetch("https://free.currconv.com/api/v7/countries?apiKey=a2deff7d2e49cf2637bb"); //Api fetch
+    const list_currency = await fetch("https://free.currconv.com/api/v7/countries?apiKey=255b739e9b5bb67c9f82"); //Api fetch
     let data = await list_currency.json(); //Raw data country's info
     let result = data.results; //Get results
     let my_list = document.getElementById("countries"); //Get datalist area
@@ -229,7 +229,7 @@ async function sym_conv(){
     let curr_amt = document.getElementById("amt_conv").value;
     let curr_desired = document.getElementById("conv_2").value;
 
-    let first_fetch = await fetch(`https://free.currconv.com/api/v7/convert?q=${curr_currency}_${curr_desired}&compact=ultra&apiKey=a2deff7d2e49cf2637bb`);
+    let first_fetch = await fetch(`https://free.currconv.com/api/v7/convert?q=${curr_currency}_${curr_desired}&compact=ultra&apiKey=255b739e9b5bb67c9f82`);
     let data = await first_fetch.json();
     let curr_price = Object.values(data);
 
@@ -276,7 +276,7 @@ function swap_na(){
 
 async function conv_name(){
     
-    let first_fetch = await fetch("https://free.currconv.com/api/v7/currencies?apiKey=a2deff7d2e49cf2637bb");
+    let first_fetch = await fetch("https://free.currconv.com/api/v7/currencies?apiKey=255b739e9b5bb67c9f82");
     let data = await first_fetch.json();
     let results = data.results;
     let curr_names = [];
@@ -322,7 +322,7 @@ async function conv_name(){
             }
         }
 
-        let fetch_conversion = await fetch(`https://free.currconv.com/api/v7/convert?q=${cur_sym}_${want_sym}&compact=ultra&apiKey=a2deff7d2e49cf2637bb`);
+        let fetch_conversion = await fetch(`https://free.currconv.com/api/v7/convert?q=${cur_sym}_${want_sym}&compact=ultra&apiKey=255b739e9b5bb67c9f82`);
         let data2 = await fetch_conversion.json();
         let price = Object.values(data2);
 
