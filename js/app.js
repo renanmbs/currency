@@ -229,9 +229,11 @@ async function sym_conv(){
     let curr_amt = document.getElementById("amt_conv").value;
     let curr_desired = document.getElementById("conv_2").value;
 
-    let first_fetch = await fetch(`https://free.currconv.com/api/v7/convert?q=${curr_currency}_${curr_desired}&compact=ultra&apiKey=d679b066937f91847ee52`);
+    let first_fetch = await fetch(`https://free.currconv.com/api/v7/convert?q=${curr_currency}_${curr_desired}&compact=ultra&apiKey=d679b066937f91847ee5`);
     let data = await first_fetch.json();
     let curr_price = Object.values(data);
+
+    console.log(first_fetch);
 
     let calculation;
 
